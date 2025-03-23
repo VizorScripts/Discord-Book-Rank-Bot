@@ -108,6 +108,15 @@ Use USER_AGENT in .env
 
 
 
+Bot will auto restart on replit via:
+``process.on('uncaughtException', error => {
+    console.error('Crash detected, restarting...', error);
+    process.exit(1);
+});``
+
+
+
+
 📄 License
 MIT License - Free for personal and commercial use
 
